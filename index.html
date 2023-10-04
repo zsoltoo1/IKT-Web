@@ -8,8 +8,7 @@
     <style>
          h1 {
             color: pink;
-         }
-
+        }
     </style> <!--belső (internal) stílusbeállítás-->
     <title>Document</title> <!--böngésző címsorában megjelenő név-->
 </head>
@@ -42,17 +41,43 @@
         <li></li>
     </ul> <!--emmet: ul.cica#kutya>li*5-->
 
-    <table>
+   <!--TÁBLÁZAT-->
+   <table>
+        <caption>TÁBLÁZAT CÍME</caption>
         <thead>
             <tr>
-                <th></th><!--fejléc cella-->
-            </tr>
-        </thead><!--fejléc-->
+                <th rowspan="2">Adat</th> <!--fejléc cella, sorok összevonása-->
+            </tr> <!--táblázat sora-->
+        </thead> <!--a táblázat fejléce-->
         <tbody>
+            <tr>
+                <td>Cica</td> <!--adat cella-->
+                <td>Kutya</td>
+                <td colspan="2">Madár</td> <!--oszlopok összevonása-->
+            </tr>
+        </tbody> <!--táblázat törzse-->
+        <tfoot>
             <td></td>
             <td></td>
-        </tbody>
-
+        </tfoot> <!--a táblázat lábléce-->
     </table>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table> <!--emmet (gyorskód): table>tr*4>td*2 ez egy 2 oszlopos 4 soros táblázat-->
 </body>
 </html>
